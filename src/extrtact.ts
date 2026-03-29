@@ -5,7 +5,6 @@ import {XMLParser} from "fast-xml-parser";
 
 
 
-
 // measurement: EMUs --> Pixels
 //EMU ia a pptx measuring unit
 function emuToPx(emu: number): number {
