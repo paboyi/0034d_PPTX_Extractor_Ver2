@@ -41,8 +41,10 @@ See road Map
 ## Road Map
 Current version V2
 - [] Save images to extrernal folder like V1
-- [] Aceept other file types e.g epub, pdf, docx etc
-
+- [] Accept other file types e.g epub, pdf, docx etc
+- [] Decide if it's wise to have frontend & Backend separated for later versions
+right now it runs as a web service on Render
+<!-- only variable server.ts reads is PORT -->
 
 ## It's plain documentation for a developer
 describing how to call your backend directly without the web page (for example from curl, Postman, or your own code.) 
