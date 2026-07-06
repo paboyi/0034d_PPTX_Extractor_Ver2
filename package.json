@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node src/server.ts",
+    "dev": "ts-node src/server.ts",
+    "extract": "ts-node src/extrtact.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -10,7 +13,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.2.0",
+    "express": "^5.2.1",
     "fast-xml-parser": "^5.2.5",
+    "multer": "^2.2.0",
     "unzipper": "^0.12.3"
   },
   "devDependencies": {
