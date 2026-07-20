@@ -6,6 +6,9 @@ import express, { Request, Response } from "express";
 import multer from "multer";
 import * as path from "path";
 import { extractPptxFromBuffer, saveImagesToFolder} from "./extractor";
+import cors from "cors";
+import * as os from "os";
+
 
 const PPTX_MIME =
 "application/vnd.openxmlformats-officedocument.presentationml.presentation";
@@ -31,7 +34,10 @@ fileFilter: (_req, file, cb) => {
 const app = express();
 
 // Serve the frontend from /public.
-app.use(express.static(path.join(__dirname, "..", "public")));
+// app.use(express.static(path.join(__dirname, "..", "public")));
+
+// Serve frontend 
+app.use(cors());
 
 app.post("/api/extract", (req: Request, res: Response) => {
 upload.single("file")(req, res, async (err: unknown) => {

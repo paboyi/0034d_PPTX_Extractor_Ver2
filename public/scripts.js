@@ -9,6 +9,9 @@ const copyBtn = document.getElementById("copyBtn");
 const downloadBtn = document.getElementById("downloadBtn");
 const truncNote = document.getElementById("truncNote");
 
+// Backend URL
+const BACKEND_API_BASE = "https://your-service-xxxxx.a.run.app"; 
+
 const PREVIEW_CAP = 60000; // chars shown in preview; full data still copies/downloads
 let fullJson = "";
 let baseName = "presentation";
@@ -68,7 +71,8 @@ async function handleFile(file) {
     form.append("file", file);
 
     try {
-    const res = await fetch("/api/extract", { method: "POST", body: form });
+    // const res = await fetch("/api/extract", { method: "POST", body: form });
+    const res = await fetch(BACKEND_API_BASE + "/api/extract", { method: "POST", body: form });
     const data = await res.json();
 
     if (!res.ok) {
