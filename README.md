@@ -25,9 +25,9 @@ then:
 ## Strick Project Requirement
 On the *"pptx only"* requirement, the gate is enforced in three layers so it can't be trivially bypassed:
 
-* Browser — accept=".pptx" plus a name/type check before upload.
-* Server — multer rejects anything not ending in .pptx → 400 "Only .pptx files are accepted."
-* Content — if someone renames a random file to .pptx, the extractor fails to find ppt/presentation.xml and returns 422 "couldn't be read as PowerPoint."
+* Browser -> accept = ".pptx" plus a name/type check before upload.
+* Server —> multer rejects anything not ending in .pptx → 400 "Only .pptx files are accepted."
+* Content → if someone renames a random file to .pptx, the extractor fails to find ppt/presentation.xml and returns 422 "couldn't be read as PowerPoint."
 
 
 <b>Why?</b>
