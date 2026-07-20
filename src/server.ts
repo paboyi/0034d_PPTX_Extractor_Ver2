@@ -16,7 +16,7 @@ const PPTX_MIME =
 // Keep uploads in memory; we never need them on disk.
 const upload = multer({
 storage: multer.memoryStorage(),
-limits: { fileSize: 100 * 1024 * 1024 }, // 100 MB cap
+limits: { fileSize: 25 * 1024 * 1024 }, // 100 MB cap // changed to 23MB for google cloud run 
 fileFilter: (_req, file, cb) => {
     const hasPptxExt = file.originalname.toLowerCase().endsWith(".pptx");
     // Some browsers send octet-stream; allow it only alongside a .pptx name.

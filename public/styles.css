@@ -212,6 +212,13 @@ button.act {
     cursor: pointer;
     transition: border-color .15s ease, color .15s ease, background .15s ease;
 }
+
+button#downloadBtn {
+    background-color: var(--text);
+    color: black;
+    font-weight: bolder;
+}
+
 button.act:hover { border-color: var(--accent); color: var(--accent); }
 button.act:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 button.act:active { background: rgba(72,209,230,0.1); }
