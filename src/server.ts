@@ -79,7 +79,7 @@ upload.single("file")(req, res, async (err: unknown) => {
 });
 });
 
-const PORT = Number(process.env.PORT) || 3000;
+const PORT = Number(process.env.PORT) || 8080;
 app.listen(PORT, () => {
-console.log(`PPTX extractor running at http://localhost:${PORT}`);
+console.log(`PPTX extractor (server) running at http://localhost:${PORT}`);
 });

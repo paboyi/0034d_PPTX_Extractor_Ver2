@@ -7,7 +7,6 @@
     "dev": "ts-node src/server.ts",
     "extract": "ts-node src/extrtact.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
   },
   "keywords": [],
   "author": "",
