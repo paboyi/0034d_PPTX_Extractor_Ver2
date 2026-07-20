@@ -23,14 +23,14 @@ then:
 
 
 ## Strick Project Requirement
-On the *"pptx only"* requirement, the gate is enforced in three layers so it can't be trivially bypassed:
+On the "*pptx only*" requirement, the gate is enforced in three layers so it can't be trivially bypassed:
 
-* Browser -> accept = ".pptx" plus a name/type check before upload.
-* Server —> multer rejects anything not ending in .pptx → 400 "Only .pptx files are accepted."
+* Browser → accept = ".pptx" plus a name/type check before upload.
+* Server → multer rejects anything not ending in .pptx → 400 "Only .pptx files are accepted."
 * Content → if someone renames a random file to .pptx, the extractor fails to find ppt/presentation.xml and returns 422 "couldn't be read as PowerPoint."
 
 
-<b>Why?</b>
+<b>Why?</b> </br>
 Because this extractor only know how to work on PPTX file for the time being.
 _See road Map for possible future extension_
 
@@ -40,7 +40,7 @@ Current version V2
 - [ ] Save images to extrernal folder like in V1
     - [ ] downloadable with JSON result
 - [ ] Accept other file types e.g epub, pdf, docx etc
-- [ ] Decide if it's wise to have frontend & Backend separated for later versions (~~currently on Render~~ AWS Lambda)
+- [ ] Decide if it's wise to have frontend & Backend separated for later versions (currently on ~~Render~~ AWS Lambda)
 <!-- only variable server.ts reads is PORT -->
 
 
