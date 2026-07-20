@@ -14,7 +14,7 @@ It accepts .pptx ONLY, enforced in three places:
 ## Run
     npm install
     npm start
-should start on port `open http://localhost:3000`
+should start on port `http://localhost:{PORT}`
 
 for a clean re-install: run `rm -rf node_modules package-lock.json`
 then:
