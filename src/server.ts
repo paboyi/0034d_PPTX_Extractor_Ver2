@@ -33,10 +33,10 @@ fileFilter: (_req, file, cb) => {
 
 const app = express();
 
-// Serve the frontend from /public.
+// Serve the frontend from /public. for Local dev (like an .env variable)
 // app.use(express.static(path.join(__dirname, "..", "public")));
 
-// Serve frontend 
+// Serve frontend // for Vercel
 app.use(cors());
 
 app.post("/api/extract", (req: Request, res: Response) => {

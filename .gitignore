@@ -8,4 +8,6 @@ dist
 
 function.zip
 
-src/old src
+old src
+
+output_images

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
     "dev": "ts-node src/server.ts",
     "extract": "ts-node src/extrtact.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,13 +21,13 @@
     "fast-xml-parser": "^5.2.5",
     "multer": "^2.2.0",
     "serverless-http": "^4.0.0",
-    "unzipper": "^0.12.3"
+    "unzipper": "^0.12.3",
+    "typescript": "^5.9.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/node": "^24.3.1",
     "@types/unzipper": "^0.10.11",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
+    "ts-node": "^10.9.2"
   }
 }

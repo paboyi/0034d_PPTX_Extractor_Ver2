@@ -71,8 +71,8 @@ async function handleFile(file) {
     form.append("file", file);
 
     try {
-    // const res = await fetch("/api/extract", { method: "POST", body: form });
-    const res = await fetch(BACKEND_API_BASE + "/api/extract", { method: "POST", body: form });
+    // const res = await fetch("/api/extract", { method: "POST", body: form }); //local dev .env
+    const res = await fetch(BACKEND_API_BASE + "/api/extract", { method: "POST", body: form }); //API .env
     const data = await res.json();
 
     if (!res.ok) {
