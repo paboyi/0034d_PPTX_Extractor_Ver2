@@ -10,7 +10,7 @@ const downloadBtn = document.getElementById("downloadBtn");
 const truncNote = document.getElementById("truncNote");
 
 // Backend URL
-const BACKEND_API_BASE = "https://your-service-xxxxx.a.run.app"; 
+const BACKEND_API_BASE = "https://gcloud-pptx-extractor-v3-2nd-626844155365.europe-west1.run.app"; 
 
 const PREVIEW_CAP = 60000; // chars shown in preview; full data still copies/downloads
 let fullJson = "";
