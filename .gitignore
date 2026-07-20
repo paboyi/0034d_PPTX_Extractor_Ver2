@@ -1,1 +1,9 @@
 changing PORTS.md
+
+.ds_store
+
+node_modules
+
+dist
+
+function.zip
