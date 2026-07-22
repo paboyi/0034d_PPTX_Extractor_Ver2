@@ -51,9 +51,16 @@ This describes how to call (access) the backend directly without the frontend we
 Literal endpoints:
 * <b>POST /api/extract</b>: 
     send an HTTP POST request to the /api/extract URL (that's the endpoint in server.ts). <br />
+test it in your terminal by using your BASE_BACKEND_URL + /api/extract.
+You wont have access to my base URL so you'll have to clone this repo and test locally.
+```
+example bash:
+curl -X POST {BASE_BACKEND_URL}/api/extract \  
+    -F 'file=@"{FILE_PATH}example.pptx"'
+```
 
-* <b>field file</b>: 
+<!-- * <b>field file</b>: 
     put the PowerPoint in a form field named file (this is the name multer reads in upload.single("file")). <br />
 
 * <b>multipart/form-data</b>: 
-    send it as a file upload, not JSON.
+    send it as a file upload, not JSON. -->
